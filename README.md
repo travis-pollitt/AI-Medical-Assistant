@@ -28,6 +28,11 @@ Solution development follows the fifth project from UT Austin's Post Graduate Pr
 
 ## Tradeoffs and Decisions
 <<TBD>>
+* Scoping the Assistant - When to use AI, when NOT to use AI
+* Build vs Buy: Open Source vs Commercial AI
+* Selecting an LLM
+* Model economics, Inference Costs, Latency Tradeoffs
+* Eval criteria for LLM-As-Judge
 
 ## What I Learned
 <<TBD>>
