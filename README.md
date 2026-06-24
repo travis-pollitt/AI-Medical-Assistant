@@ -18,7 +18,13 @@ Primary care physicians currently lack a trusted, efficient way to access reliab
 If left unaddressed, these workflow pressures can reduce physician capacity, increase burnout risk, and contribute to a projected physician shortage of up to 86,000 by 2036 (AAMC).
 
 ## Solution Alignment
-<<TBD>>
+Solution development follows the fifth project from UT Austin's Post Graduate Program in Machine Learning & Artificial Intelligence for Business Applications. The program provided a portable document format (PDF) containing Merck & Co's nearly 4,000 page medical manual. To complete this assignnment, I completed the following steps:
+
+* Model Selection: Selecting an open source LLM model
+* Medical question answering using LLM
+* Medical question answering using LLM and prompt engineering
+* Medical question answering using LLM, prompt engineering, and retrieval-augmented generation
+* Deployed LLM-As-Judge eval to measure groundedness and relevance
 
 ## Tradeoffs and Decisions
 <<TBD>>
