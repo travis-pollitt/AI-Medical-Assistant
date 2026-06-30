@@ -1,4 +1,4 @@
-# AI-Medical-Assistant
+# AI-Medical-Assistant (WIP)
 The healthcare industry is rapidly evolving, with primary care physicians facing increasing challenges in managing vast volumes of medical data while delivering accurate and timely diagnoses. The need for quick access to comprehensive, reliable, and up-to-date medical knowledge is critical for improving patient outcomes and ensuring informed decision-making in a fast-paced environment.
 
 This project utilizes retrieval-augmented generation (RAG) to parse Merck & Co.'s "Merck Manuals", the company's medical reference manual that contains over 4,000 pages and 23 sections.
