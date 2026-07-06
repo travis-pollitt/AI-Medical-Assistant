@@ -1,5 +1,5 @@
 # AI-Medical-Assistant (WIP)
-Primary care physicians manage a broad range of patient concerns while working under time pressure, documentation burden, and increasing clinical complexity. The need for quick access to comprehensive, reliable, and source-backed medical knowledge is critical for improving patient outcomes and ensuring informed decision-making in a fast-paced environment.
+Primary care physicians (PCPs) manage a broad range of patient concerns while working under time pressure, documentation burden, and increasing clinical complexity. The need for quick access to comprehensive, reliable, and source-backed medical knowledge is critical for improving patient outcomes and ensuring informed decision-making in a fast-paced environment.
 
 This project utilizes retrieval-augmented generation (RAG) to parse Merck & Co.'s _Merck Manuals_, the company's medical reference manual that contains over 4,000 pages and 23 sections.
 
@@ -30,11 +30,20 @@ The following steps were completed:
 
 ## Tradeoffs and Decisions
 <<TBD>>
-* Scoping the Assistant - When to use AI, when NOT to use AI
-* Build vs Buy: Open Source vs Commercial AI
-* Selecting an LLM
-* Model economics, Inference Costs, Latency Tradeoffs
-* Eval criteria for LLM-As-Judge
+#### Tradeoff #1: Choosing Between Open Source vs Commercial AI
+* model economics, inference costs, latency tradeoffs
+
+#### Tradeoff #2: Selecting an Open Source LLM
+* Evaluating open source LLMs for AI medical assistant use case
+
+#### Tradeoff #3: Defining System Prompts
+* defining system prompts, evaluating pass/fail criteria
+
+#### Tradeoff #4: Data Chunking Decisions
+* Explain what data chunking is, why I chose this approach
+
+### Tradeoff #5: Eval criteria for LLM-As-Judge
+* Explain what metrics were chosen and why
 
 ## What I Learned
 <<TBD>>
