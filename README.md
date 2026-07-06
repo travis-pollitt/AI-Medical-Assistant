@@ -30,13 +30,13 @@ The following steps were completed:
 
 ## Tradeoffs and Decisions
 <<TBD>>
-#### Tradeoff #1: Choosing Between Open Source vs Commercial AI
+#### Tradeoff #1: Choosing Between Commercial, Managed Open-Weight, or Self Hosted Open-Weight LLMs
 * model economics, inference costs, latency tradeoffs
 
-#### Tradeoff #2: Selecting an Open Source LLM
+#### Tradeoff #2: Selecting a Managed Open-Weight Model
 * Evaluating open source LLMs for AI medical assistant use case
 
-#### Tradeoff #3: Defining System Prompts
+#### Tradeoff #3: Defining a System Prompt Architecture
 * defining system prompts, evaluating pass/fail criteria
 
 #### Tradeoff #4: Data Chunking Decisions
