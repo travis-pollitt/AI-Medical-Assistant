@@ -31,7 +31,9 @@ The following steps were completed:
 ## Tradeoffs and Decisions
 <<TBD>>
 #### Tradeoff #1: Choosing Between Commercial, Managed Open-Weight, or Self Hosted Open-Weight LLMs
-* model economics, inference costs, latency tradeoffs
+UT Austin's project curriculum chose to run the model locally in Google Colab through llama.pp. This choice made the prototype more accessible, free to use, and easier to run without relying on a commercial LLM API from Anthropic, OpenAI, or Google.
+
+In this context, selecting an open-weight model becomes a key decision point. With limited 
 
 #### Tradeoff #2: Selecting a Managed Open-Weight Model
 * Evaluating open source LLMs for AI medical assistant use case
