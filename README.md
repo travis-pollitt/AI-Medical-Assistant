@@ -29,23 +29,51 @@ The following steps were completed:
 * Implementing LLM-As-Judge eval to measure groundedness and relevance
 
 ## Tradeoffs and Decisions
-<<TBD>>
-#### Tradeoff #1: Choosing Between Commercial, Managed Open-Weight, or Self Hosted Open-Weight LLMs
-UT Austin's project curriculum chose to run the model locally in Google Colab through llama.pp. This choice made the prototype more accessible, free to use, and easier to run without relying on a commercial LLM API from Anthropic, OpenAI, or Google.
+### Tradeoff #1: Building a RAG vs Claude vs ChatGPT
+As LLM capabilities continue to advance, companies must decide how to effectively deploy AI across the enterprise. Three options are emerging:
 
-In this context, selecting an open-weight model becomes a key decision point. With limited 
+1. Adopt a Commercial LLM for all use cases (Claude, ChatGPT, Gemini)
+* best for experimentation, when companies want to understand "what's possible"
+* leverage the harness built by leading AI companies
+  
+2. Manage all use cases through an open-weight version (Flexible model selection via AWS, Azure, Google Cloud)
+* let's companies adjust models based on the complexity of the use cases (many enterprise use cases fall into this bukcet)
+  
+3. Internally build their entire AI stack (flexible model selection and custom infrastructure)
+* Especially valuable when companies are protecting intellectual property 
 
-#### Tradeoff #2: Selecting a Managed Open-Weight Model
-* Evaluating open source LLMs for AI medical assistant use case
+Open Questions
+- How does RAG fit into these choices? I assume number 2?
+- When using an open weight version, are companies responsible for the harness?
+- How to balance a managed-weight version for simpler cases when an internal build is needed for IP sensitive use cases?
+- For enterprises, it's challenging to weigh technical proficiency. Of course companies would love to reduce spend and move to a hybrid or open source approach. How many enterprises have the tech capabilities to do this? if you do it, what about the memory layer? a hybrid approach that incorporates multiple models in the same cloud infrastructure makes sense.
+- Are my three options even correct?
+
+#### Tradeoff #2: Choosing a Model Within Project Constraints
+UT Austin's course curriculum chose to host this project within Google Collab. This choice made the prototype free to use and easier to run without relying on a commercial LLM. In this context, selecting an open-weight model becomes a key decision point. 
+
+General Notes / Mental model for this tradeoff 
+- Commercial models for complex tasks with less data (less mature)
+- Open-weight models for tasks with strong datasets, such as customer support (more mature)
+
+Open Questions
+- When using google collab, could I select an OpenAI or Anthropic model if desired? or am I confined to open source models or Google's model suite?
+- When using an open source model (is this the right term?) with cloud provider infra, what do I need to consider?
+- What are reasonable alternatives to the mistral model I selected?
 
 #### Tradeoff #3: Defining a System Prompt Architecture
 * defining system prompts, evaluating pass/fail criteria
 
 #### Tradeoff #4: Data Chunking Decisions
 * Explain what data chunking is, why I chose this approach
+* Embeddings, Vector Databases, Retriever
 
 ### Tradeoff #5: Eval criteria for LLM-As-Judge
 * Explain what metrics were chosen and why
 
 ## What I Learned
-<<TBD>>
+* define an architecture for your entire ecosystem
+* different models make sense for different use cases / company maturities
+* companies must be honest - do they have the budget, patience, and skillsets internally to attempt anything besides a commercial solution?
+* Defining when a commercial solution is useful vs managed open-host vs custom build
+* Model tradeoffs within selective restraints
